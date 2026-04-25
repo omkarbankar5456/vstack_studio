@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ScrollReveal, StaggerContainer, StaggerItem, Magnetic } from './ScrollAnimations';
+import { ScrollReveal, StaggerContainer, StaggerItem } from './ScrollAnimations';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -31,24 +31,24 @@ const Footer = () => {
               Your partner in digital evolution.
             </p>
             {/* Social Icons with magnetic effect */}
-            <div className="flex gap-4">
-              {['Twitter', 'LinkedIn', 'Instagram', 'Dribbble'].map((platform, i) => (
-                <Magnetic key={platform} strength={0.2}>
-                  <motion.a
-                    href="#"
-                    className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/10 transition-all"
-                    whileHover={{ scale: 1.1, rotate: 5 }}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: i * 0.1 }}
-                  >
-                    <span className="sr-only">{platform}</span>
-                    <div className="w-5 h-5 bg-current rounded-sm opacity-50" />
-                  </motion.a>
-                </Magnetic>
-              ))}
-            </div>
+            {/*<div className="flex gap-4">*/}
+            {/*  {['Twitter', 'LinkedIn', 'Instagram', 'Dribbble'].map((platform, i) => (*/}
+            {/*    <Magnetic key={platform} strength={0.2}>*/}
+            {/*      <motion.a*/}
+            {/*        href="#"*/}
+            {/*        className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/10 transition-all"*/}
+            {/*        whileHover={{ scale: 1.1, rotate: 5 }}*/}
+            {/*        initial={{ opacity: 0, y: 20 }}*/}
+            {/*        whileInView={{ opacity: 1, y: 0 }}*/}
+            {/*        viewport={{ once: true }}*/}
+            {/*        transition={{ delay: i * 0.1 }}*/}
+            {/*      >*/}
+            {/*        <span className="sr-only">{platform}</span>*/}
+            {/*        <div className="w-5 h-5 bg-current rounded-sm opacity-50" />*/}
+            {/*      </motion.a>*/}
+            {/*    </Magnetic>*/}
+            {/*  ))}*/}
+            {/*</div>*/}
           </StaggerItem>
 
           {/* Quick Links */}
@@ -80,8 +80,7 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-6">Contact</h4>
             <ul className="space-y-4">
               {[
-                { label: 'hello@vstackstudio.com', href: 'mailto:hello@vstackstudio.com' },
-                { label: '+1 (555) 123-4567', href: 'tel:+15551234567' },
+                { label: 'vstackstudio@gmail.com', href: 'mailto:vstackstudio@gmail.com' },
                 { label: 'Worldwide Remote', href: '#' },
               ].map((item, i) => (
                 <motion.li

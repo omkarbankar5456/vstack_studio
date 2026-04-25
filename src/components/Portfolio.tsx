@@ -8,7 +8,7 @@ const projects = [
     category: "Technical Frameworks & Solutions",
     description: "Analytics dashboard with real-time insights.",
     image:
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800",
+        "https://kommodo.ai/i/TWosC1GH4tfWyrHbbvTT",
     tags: ["HTML", "CSS", "JavaScript"],
   },
   {

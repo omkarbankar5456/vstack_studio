@@ -243,7 +243,7 @@ const Services = () => {
               }`}
             >
               <Code2 size={18} className={activeTab === 'technical' ? 'animate-pulse' : ''} />
-              <span>Technical Services (Option A)</span>
+              <span>Technical Services</span>
             </button>
 
             {/* Option B button */}
@@ -254,7 +254,7 @@ const Services = () => {
               }`}
             >
               <Palette size={18} className={activeTab === 'creative' ? 'animate-pulse' : ''} />
-              <span>Creative Services (Option B)</span>
+              <span>Creative Services</span>
             </button>
           </div>
         </div>

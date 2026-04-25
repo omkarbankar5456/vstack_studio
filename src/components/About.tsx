@@ -27,9 +27,9 @@ const features = [
 ];
 
 const stats = [
-  { icon: <Award className="text-blue-400" size={28} />, value: 50, suffix: '+', label: 'Projects Delivered' },
-  { icon: <Clock className="text-purple-400" size={28} />, value: 3, suffix: '+', label: 'Years Experience' },
-  { icon: <Heart className="text-orange-400" size={28} />, value: 100, suffix: '%', label: 'Client Satisfaction' },
+  { icon: <Award className="text-blue-400" size={28} />, value: 23, suffix: '+', label: 'Projects Delivered' },
+  { icon: <Clock className="text-purple-400" size={28} />, value: 1, suffix: '+', label: 'Years Experience' },
+  { icon: <Heart className="text-orange-400" size={28} />, value: 93, suffix: '%', label: 'Client Satisfaction' },
 ];
 
 const About = () => {
@@ -153,7 +153,7 @@ const About = () => {
                     className="absolute -bottom-8 -right-8 glass p-6 rounded-2xl shadow-2xl z-20"
                   >
                     <div className="text-3xl font-bold text-blue-500">
-                      <CountUp end={50} suffix="+" />
+                      <CountUp end={23} suffix="+" />
                     </div>
                     <div className="text-sm text-slate-400">Projects Completed</div>
                   </motion.div>
@@ -167,7 +167,7 @@ const About = () => {
                   >
                     <div className="flex items-center gap-2">
                       <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-                      <span className="text-sm text-slate-300">Available for hire</span>
+                      <span className="text-sm text-slate-300">Let's build your IDEA</span>
                     </div>
                   </motion.div>
                 </ScrollReveal>

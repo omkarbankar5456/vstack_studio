@@ -110,7 +110,7 @@ const Contact = () => {
                         </motion.div>
                         <div>
                           <p className="text-sm text-slate-400">Email us at</p>
-                          <p className="font-medium">hello@vstackstudio.com</p>
+                          <p className="font-medium">vstackstudio@gmail.com</p>
                         </div>
                       </motion.div>
                     </Magnetic>
@@ -127,8 +127,8 @@ const Contact = () => {
                           <Phone size={24} />
                         </motion.div>
                         <div>
-                          <p className="text-sm text-slate-400">Call us</p>
-                          <p className="font-medium">+1 (555) 123-4567</p>
+                          <p className="text-sm text-slate-400">Contact Us</p>
+                          <a href="https://discord.gg/q4T8T5J9" target="_blank"><p className="font-medium">Discord</p></a>
                         </div>
                       </motion.div>
                     </Magnetic>
@@ -161,15 +161,18 @@ const Contact = () => {
                 <p className="text-slate-400 mb-6">
                   Have a quick question? Drop us a message and we'll get back to you shortly.
                 </p>
-                <Magnetic strength={0.1}>
-                  <motion.button
-                    className="btn-secondary w-full flex items-center justify-center gap-2 group"
-                    whileHover={{ scale: 1.03 }}
-                    whileTap={{ scale: 0.98 }}
-                  >
-                    <MessageSquare size={18} className="group-hover:animate-bounce" /> Start Chat
-                  </motion.button>
-                </Magnetic>
+                <a href="mailto:vstackstudio@gmail.com" className="w-full">
+                  <Magnetic strength={0.1}>
+                    <motion.button
+                        className="btn-secondary w-full flex items-center justify-center gap-2 group"
+                        whileHover={{ scale: 1.03 }}
+                        whileTap={{ scale: 0.98 }}
+                    >
+                      <MessageSquare size={18} className="group-hover:animate-bounce" />
+                      Start Chat
+                    </motion.button>
+                  </Magnetic>
+                </a>
               </div>
             </ScrollReveal>
           </div>
